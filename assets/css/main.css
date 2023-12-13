@@ -237,7 +237,7 @@ html {
 }
 
 body {
-	color: #212931;
+	color: #212931; /*Farbe des Hintergrundes*/
 }
 
 body,
@@ -2480,7 +2480,7 @@ select {
 	background-repeat: no-repeat;
 	background-position: calc(100% - 1rem) center;
 	height: 3rem;
-	padding-right: 0rem;
+	padding-right: 3rem;
 	text-overflow: ellipsis;
 }
 
