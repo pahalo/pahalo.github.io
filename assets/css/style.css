@@ -63,3 +63,8 @@
         top: 50px; /* Neue Position von oben */
     }
 }
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 100% auto; /* Hier änderst du die Hintergrundgröße für Mobilgeräte */
+    }
+}
