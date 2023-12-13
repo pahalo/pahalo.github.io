@@ -28,6 +28,9 @@
 .spenden-text {
     display: none;
 }
+.spenden-text.active {
+    display: block;
+}
 .toggle-button {
     text-decoration: none;
     color: #000; /* Farbe des Buttons */
@@ -45,6 +48,7 @@
 .toggle-button.active::after {
     content: "\25BC"; /* Pfeil nach unten */
 }
+
 .logo img {
     width: 225px; /* Standardbreite */
     height: 225px; /* Standardhöhe */
@@ -55,7 +59,19 @@ body {
 h2 {
     text-align: left;
 }
+.field label {
+    text-align: left;
+    display: block;
+}
 
+.fields {
+    width: 80%;
+    margin: auto;
+}
+strong {
+    font-weight: bold; /* Setze den Text auf fett */
+    color: red; /* Färbe den Text rot */
+}
 
 /* Media Query für kleinere Bildschirme oder Geräte */
 @media screen and (max-width: 768px) {
