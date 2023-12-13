@@ -3935,6 +3935,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 #main>.post.featured {
 	text-align: center;
+	background-size: cover;
 }
 
 @media screen and (max-width: 1280px) {

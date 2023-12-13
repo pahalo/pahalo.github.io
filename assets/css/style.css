@@ -6,7 +6,7 @@
 }
 
 .additional-text {
-    padding-bottom: 1250px;
+    padding-bottom: 100vh;/*wie weit noch gescrollt werden kann in prozent des Viewports*/
 }
 
 .video-container {
