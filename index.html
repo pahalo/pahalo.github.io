@@ -5,7 +5,7 @@
 	<title>Startseite - Südafrika 2024</title>
 	<link rel="icon" href="images/ASC_logo_favIcon.png" type="image/x-icon">
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/style.css"/>
 	<noscript>
@@ -30,7 +30,17 @@
             background-attachment: scroll, scroll, scroll;
             z-index: -1;
         }
-
+		body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: url("../../images/PlayingKids02.jpg"); /* Hier die URL des Hintergrundbildes einfügen */
+            background-size: cover; /* Das Hintergrundbild wird so skaliert, dass der gesamte Hintergrund abgedeckt ist */
+            background-position: center; /* Das Hintergrundbild wird zentriert */
+            background-repeat: no-repeat; /* Das Hintergrundbild wird nicht wiederholt */
+            height: 100vh; /* Der Hintergrund deckt die gesamte Viewport-Höhe ab */
+        }
 
         @media screen and (orientation: portrait) {
 
@@ -42,7 +52,7 @@
 	</style>
 </head>
 
-<body class="is-preload" style = "margin : 0;">
+<body class="is-preload">
 
 	<!-- Wrapper -->
 	<div id="wrapper" class="fade-in">
