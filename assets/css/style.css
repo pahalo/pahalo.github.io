@@ -68,10 +68,6 @@ h2 {
     width: 80%;
     margin: auto;
 }
-strong {
-    font-weight: bold; /* Setze den Text auf fett */
-    color: red; /* Färbe den Text rot */
-}
 
 /* Media Query für kleinere Bildschirme oder Geräte */
 @media screen and (max-width: 768px) {
