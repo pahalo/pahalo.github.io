@@ -1,0 +1,107 @@
+/* Fügt Platz oberhalb des Headers hinzu, um das Bild tiefer zu positionieren */
+#header {
+    padding-top: 100px;
+    padding-bottom: 125px;
+    /* Höhe des ASC Logos */
+}
+
+.additional-text {
+    padding-bottom: 100vh;/*wie weit noch gescrollt werden kann in prozent des Viewports*/
+}
+
+.video-container {
+    position: relative;
+    width: 50%; /* Reduziere die Breite des Containers auf 50% der Bildschirmbreite */
+    margin: 0 auto; /* Zentriert das Video horizontal */
+    padding-bottom: 28.125%; /* Das Seitenverhältnis 16:9 beibehalten */
+    overflow: hidden; /* Verhindert das Überlaufen des Videos */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Verstecke standardmäßig den Abschnitt mit dem ausklappbaren Text */
+.spenden-text {
+    display: none;
+}
+.spenden-text.active {
+    display: block;
+}
+.toggle-button {
+    text-decoration: none;
+    color: #000; /* Farbe des Buttons */
+    line-height: 1; /* Passt die Zeilenhöhe des Buttons an */
+    display: inline-block;
+}
+
+.toggle-button::after {
+    content: "\25B6"; /* Pfeil nach rechts */
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease; /* Hinzufügen einer Transition für den Pfeil */
+}
+
+.toggle-button.active::after {
+    content: "\25BC"; /* Pfeil nach unten */
+}
+
+.logo img {
+    width: 225px; /* Standardbreite */
+    height: 225px; /* Standardhöhe */
+}
+body {
+    background-color: #ffffff;
+}
+h2 {
+    text-align: left;
+}
+.field label {
+    text-align: left;
+    display: block;
+}
+
+.fields {
+    width: 80%;
+    margin: auto;
+}
+
+/* Media Query für kleinere Bildschirme oder Geräte */
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 150px; /* Anpassung der Breite für kleinere Bildschirme */
+        height: 150px; /* Anpassung der Höhe für kleinere Bildschirme */
+    }
+}
+@media screen and (max-width: 1680px) {
+    .logo img {
+        width: 200px; /* Anpassung der Breite für kleinere Bildschirme */
+        height: 200px; /* Anpassung der Höhe für kleinere Bildschirme */
+    }
+    #header {
+        padding-top: 100px;
+        padding-bottom: 75px;
+        /* Höhe des ASC Logos */
+    }
+}
+@media screen and (max-width: 1280px) {
+    #header {
+        padding-top: 100px;
+        padding-bottom: 60px;
+        /* Höhe des ASC Logos */
+    }
+}
+@media screen and (max-width: 980px) {
+    .logo img {
+        width: 150px; /* Anpassung der Breite für kleinere Bildschirme */
+        height: 150px; /* Anpassung der Höhe für kleinere Bildschirme */
+    }
+    #header {
+        padding-top: 100px;
+        padding-bottom: 0px;
+        /* Höhe des ASC Logos */
+    }
+}
